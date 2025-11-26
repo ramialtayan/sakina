@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SAKINA — Serenity in Every Prayer</title>
-  <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
-  <link rel="stylesheet" href="src/css/styles.css" />
-</head>
-<body>
-  <div id="app"></div>
-  <script src="src/js/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAKINA™ — Adjustable Quran Stand</title>
+
+    <!-- ===== Google Analytics (ضع ID الحقيقي بدل G-XXXXXXX) ===== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXX");
+    </script>
+
+    <!-- ===== Meta / Facebook Pixel (ضع PIXEL_ID_HERE الحقيقي) ===== -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "PIXEL_ID_HERE");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=PIXEL_ID_HERE&ev=PageView&noscript=1"
+      />
+    </noscript>
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>
