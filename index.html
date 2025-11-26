@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SAKINA™ — Adjustable Quran Stand</title>
 
-    <!-- ===== Google Analytics (ضع ID الحقيقي بدل G-XXXXXXX) ===== -->
+    <!-- ===== Google Analytics (غيّر G-XXXXXXX لمعرفك الحقيقي) ===== -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -16,13 +16,13 @@
       gtag("config", "G-XXXXXXX");
     </script>
 
-    <!-- ===== Meta / Facebook Pixel (ضع PIXEL_ID_HERE الحقيقي) ===== -->
+    <!-- ===== Meta Pixel (غيّر PIXEL_ID_HERE لمعرفك الحقيقي) ===== -->
     <script>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
-        n = f.fbq = function () {
+        n = (f.fbq = function () {
           n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-        };
+        });
         if (!f._fbq) f._fbq = n;
         n.push = n;
         n.loaded = !0;
@@ -46,10 +46,312 @@
       />
     </noscript>
 
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="icon" href="public/favicon.ico" />
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+
+  <body class="ltr">
+    <header class="nav">
+      <div class="nav-left">
+        <div class="logo-circle">S</div>
+        <div class="logo-text">
+          <span class="brand" data-i18n="brand">SAKINA™</span>
+          <span class="tagline" data-i18n="tagline">Serenity in Every Prayer</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#features" data-i18n="navFeatures">Features</a>
+        <a href="#gallery" data-i18n="navGallery">Gallery</a>
+        <a href="#video" data-i18n="navVideo">Video</a>
+        <a href="#wholesale" data-i18n="navWholesale">Wholesale</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="nav-lang">
+        <button id="btn-en" class="lang-btn active">EN</button>
+        <span class="lang-divider">|</span>
+        <button id="btn-ar" class="lang-btn">AR</button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1 data-i18n="heroTitle">
+          Adjustable Qur'an Stand for Every Prayer Space.
+        </h1>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">
+          From mosque to home to classroom — SAKINA™ brings a stable, height-adjustable stand for comfortable recitation standing, sitting on the floor, or on a chair.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#wholesale" class="btn-primary" data-i18n="heroPrimary">
+            Request wholesale catalogue
+          </a>
+          <a href="#features" class="btn-ghost" data-i18n="heroSecondary">
+            View product details
+          </a>
+        </div>
+
+        <div class="hero-badges">
+          <span data-i18n="badgeHeights">5 adjustable heights</span>
+          <span data-i18n="badgeStrong">Impact-resistant plastic</span>
+          <span data-i18n="badgeBag">Travel-ready canvas bag</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <!-- استبدل الصورة باسم صورة البطل الحقيقية -->
+          <img
+            src="public/images/hero-stand.jpg"
+            alt="SAKINA adjustable Quran stand"
+            class="hero-image"
+          />
+          <div class="hero-label">SAKINA™ Stand • Matte Black</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="section-header">
+        <h2 data-i18n="featuresTitle">
+          Designed for real daily use in mosques and homes
+        </h2>
+        <p data-i18n="featuresSubtitle">
+          A single stand that works for imams, teachers, elderly, and children. Easy to assemble, easy to store, difficult to break.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon">✦</div>
+          <h3 data-i18n="f1Title">
+            Pray standing, sitting, or on a chair
+          </h3>
+          <p data-i18n="f1Desc">
+            Height range from 15 cm up to 100 cm to support reading after prayer,
+            Taraweeh, lectures, or Qur'an classes.
+          </p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon">✦</div>
+          <h3 data-i18n="f2Title">Fast assembly & disassembly</h3>
+          <p data-i18n="f2Desc">
+            Tube pieces click together without tools. Anyone can assemble it in
+            less than a minute.
+          </p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon">✦</div>
+          <h3 data-i18n="f3Title">Compact & easy to hide</h3>
+          <p data-i18n="f3Desc">
+            When disassembled, all parts fit neatly into a fabric bag that can be
+            placed in a closet, drawer, or car trunk.
+          </p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon">✦</div>
+          <h3 data-i18n="f4Title">Reinforced, break-resistant plastic</h3>
+          <p data-i18n="f4Desc">
+            Original family factory formula in Jordan, engineered to withstand
+            daily use in mosques without cracking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section section-alt">
+      <div class="section-header">
+        <h2 data-i18n="galleryTitle">Real product. Real photos.</h2>
+        <p data-i18n="gallerySubtitle">
+          Here is the actual SAKINA™ stand in different heights inside a real mosque environment.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- غيّر مسارات الصور حسب أسماء ملفاتك -->
+        <div class="gallery-item">
+          <img src="public/images/height-15.jpg" alt="15 cm" />
+          <span class="gallery-label">15 cm</span>
+        </div>
+        <div class="gallery-item">
+          <img src="public/images/height-30.jpg" alt="30 cm" />
+          <span class="gallery-label">30 cm</span>
+        </div>
+        <div class="gallery-item">
+          <img src="public/images/height-45.jpg" alt="45 cm" />
+          <span class="gallery-label">45 cm</span>
+        </div>
+        <div class="gallery-item">
+          <img src="public/images/height-65.jpg" alt="65 cm" />
+          <span class="gallery-label">65 cm</span>
+        </div>
+        <div class="gallery-item">
+          <img src="public/images/height-80.jpg" alt="80 cm" />
+          <span class="gallery-label">80 cm</span>
+        </div>
+        <div class="gallery-item">
+          <img src="public/images/height-100.jpg" alt="100 cm" />
+          <span class="gallery-label">100 cm</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video" class="section">
+      <div class="section-header center">
+        <h2 data-i18n="videoTitle">Product demo video</h2>
+        <p data-i18n="videoSubtitle">
+          Add your 15–20 second video here to show height changes, assembly, and usage in one smooth clip.
+        </p>
+      </div>
+
+      <div class="video-wrapper">
+        <video
+          class="product-video"
+          controls
+          poster="public/images/video-poster.jpg"
+        >
+          <source src="public/videos/sakina-demo.mp4" type="video/mp4" />
+        </video>
+        <p class="video-note" data-i18n="videoNote">
+          Replace this placeholder with your own MP4 file once the video is
+          ready.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHOLESALE -->
+    <section id="wholesale" class="section section-alt">
+      <div class="section-header">
+        <h2 data-i18n="wholesaleTitle">
+          Wholesale & distribution — Saudi Arabia
+        </h2>
+        <p data-i18n="wholesaleSubtitle">
+          Looking for a reliable Qur'an stand for your shop, mosque project, or
+          online store? SAKINA™ offers stable margins and original manufacturing
+          quality.
+        </p>
+      </div>
+
+      <ul class="wholesale-list">
+        <li data-i18n="wholesalePoint1">
+          Bulk pricing starting from 20 units per height mix.
+        </li>
+        <li data-i18n="wholesalePoint2">
+          Made in Jordan — original mold, not the fragile copies.
+        </li>
+        <li data-i18n="wholesalePoint3">
+          Ideal for mosques, schools, Islamic centers, and gift shops.
+        </li>
+      </ul>
+
+      <div class="wholesale-cta">
+        <!-- حط رقم رفيقك بالسعودية -->
+        <a
+          href="https://wa.me/966500000000"
+          class="btn-primary"
+          data-i18n="wholesaleCTA"
+        >
+          Contact KSA distributor
+        </a>
+      </div>
+    </section>
+
+    <!-- ORDER FORM -->
+    <section class="section">
+      <div class="section-header center">
+        <h2 data-i18n="orderTitle">Retail & small orders</h2>
+        <p data-i18n="orderSubtitle">
+          Fill this form and we will reach out via WhatsApp to confirm available
+          stock and the best way to deliver to your city.
+        </p>
+      </div>
+
+      <form class="order-form" id="order-form">
+        <div class="form-row">
+          <label data-i18n="fieldName">Full name</label>
+          <input type="text" name="name" required />
+        </div>
+        <div class="form-row">
+          <label data-i18n="fieldPhone">WhatsApp number</label>
+          <input type="tel" name="phone" required />
+        </div>
+        <div class="form-row">
+          <label data-i18n="fieldCity">City / Area</label>
+          <input type="text" name="city" required />
+        </div>
+        <div class="form-row">
+          <label data-i18n="fieldHeight">Preferred height</label>
+          <select name="height">
+            <option value="" data-i18n="fieldHeightPlaceholder">
+              e.g. 45 cm, 65 cm, mix…
+            </option>
+            <option>15 cm</option>
+            <option>30 cm</option>
+            <option>45 cm</option>
+            <option>65 cm</option>
+            <option>80 cm</option>
+            <option>100 cm</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label data-i18n="fieldNotes">
+            Notes (quantity, mosque / home / gift…)
+          </label>
+          <textarea name="notes" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary wide" data-i18n="submitBtn">
+          Send request
+        </button>
+
+        <p id="thanks-msg" class="thanks-msg" style="display: none">
+          <!-- النص يتعبّى من JS -->
+        </p>
+      </form>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-header center">
+        <h2 data-i18n="contactTitle">Other regions</h2>
+        <p data-i18n="contactNote">
+          For international distribution or large projects, contact the brand
+          owner directly.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3 data-i18n="contactJordan">Jordan — factory & local wholesale</h3>
+          <a
+            href="https://wa.me/962700000000"
+            class="contact-phone"
+          >
+            +962 7 0000 0000
+          </a>
+        </div>
+        <div class="contact-card">
+          <h3 data-i18n="contactUSA">USA — brand & partnerships</h3>
+          <a
+            href="https://wa.me/12090000000"
+            class="contact-phone"
+          >
+            +1 (209) 000-0000
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p data-i18n="footerText">
+        SAKINA™ — Original adjustable Qur'an stand. Made in Jordan, distributed globally.
+      </p>
+    </footer>
+
+    <script src="src/js/app.js"></script>
   </body>
 </html>
