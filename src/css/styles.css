@@ -484,3 +484,20 @@ body.rtl {
     display: none;
   }
 }
+/* RTL tweaks */
+body.rtl .nav {
+  direction: rtl;              /* يخلي الناف يمين → يسار */
+}
+
+body.rtl .nav-left {
+  flex-direction: row-reverse; /* اللوغو يصير على اليمين والنص بعده */
+}
+
+body.rtl .nav-links {
+  direction: rtl;
+  justify-content: center;     /* خليهم بنص الناف، فيك تخليها flex-end لو بدك */
+}
+
+body.rtl .nav-links a {
+  text-align: center;
+}
