@@ -1,2 +1,2 @@
-# sakina
-Official SAKINA landing page.
+# sakkina
+Official SAKKINA landing page.
