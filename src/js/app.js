@@ -135,6 +135,7 @@ const translations = {
 };
 
 function applyLang(lang) {
+  localStorage.setItem("lang", lang);
   const dict = translations[lang];
   const body = document.body;
   body.classList.remove("ltr", "rtl");
@@ -164,8 +165,19 @@ function applyLang(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  applyLang("en");
+  const savedLang = localStorage.getItem("lang");
 
+  if (savedLang) {
+    applyLang(savedLang);
+  } else {
+    const userLang = navigator.language || navigator.userLanguage;
+
+    if (userLang.startsWith("ar")) {
+      applyLang("ar");
+    } else {
+      applyLang("en");
+    }
+  }
   document.getElementById("btn-en").addEventListener("click", () => {
     applyLang("en");
   });
