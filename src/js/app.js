@@ -189,12 +189,44 @@ document.addEventListener("DOMContentLoaded", () => {
   const thanks = document.getElementById("thanks-msg");
 
   form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    if (thanks) {
-      const currentLang = document.body.classList.contains("rtl") ? "ar" : "en";
-      thanks.textContent = translations[currentLang].formThanks;
-      thanks.style.display = "block";
-    }
-    form.reset();
-  });
+  e.preventDefault();
+
+  const currentLang = document.body.classList.contains("rtl") ? "ar" : "en";
+
+  const data = {
+    name: form.name.value.trim(),
+    phone: form.phone.value.trim(),
+    city: form.city.value.trim(),
+    notes: form.notes.value.trim(),
+  };
+
+  // 🔹 رقم الموزّع (بدون +)
+  const FRIEND_WA_NUMBER = "966500000000"; // عدّل الرقم
+
+  const message =
+    currentLang === "ar"
+      ? `🟢 طلب جديد — سكينة
+الاسم: ${data.name}
+واتساب: ${data.phone}
+المدينة: ${data.city}
+ملاحظات: ${data.notes || "-"}`
+      : `🟢 NEW SAKINA ORDER
+Name: ${data.name}
+WhatsApp: ${data.phone}
+City: ${data.city}
+Notes: ${data.notes || "-"}`;
+
+  const url = `https://wa.me/${FRIEND_WA_NUMBER}?text=${encodeURIComponent(
+    message
+  )}`;
+
+  window.open(url, "_blank");
+
+  if (thanks) {
+    thanks.textContent = translations[currentLang].formThanks;
+    thanks.style.display = "block";
+  }
+
+  form.reset();
+});
 });
