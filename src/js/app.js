@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // 🔹 رقم الموزّع (بدون +)
-  const FRIEND_WA_NUMBER = "966500000000"; // عدّل الرقم
+  const FRIEND_WA_NUMBER = "966503015455"; // عدّل الرقم
 
   const message =
     currentLang === "ar"
