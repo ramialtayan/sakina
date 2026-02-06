@@ -58,7 +58,7 @@ const translations = {
     submitBtn: "Send request",
     formThanks: "Thank you! We will contact you shortly via WhatsApp.",
     contactTitle: "Other regions",
-    contactJordan: "Jordan — factory & local wholesale",
+    contactJordan: "Jordan — factory",
     contactUSA: "USA — brand & partnerships",
     contactNote:
       "For international distribution or large projects, contact the brand owner directly.",
@@ -125,7 +125,7 @@ const translations = {
     submitBtn: "إرسال الطلب",
     formThanks: "شكرًا لك، سيتم التواصل معك قريبًا عبر الواتساب.",
     contactTitle: "مناطق أخرى",
-    contactJordan: "الأردن — المصنع والبيع المحلي",
+    contactJordan: "الأردن — المصنع",
     contactUSA: "أمريكا — إدارة العلامة والشراكات",
     contactNote:
       "للتوزيع الدولي أو المشاريع الكبيرة، يرجى التواصل مباشرة مع صاحب العلامة.",
